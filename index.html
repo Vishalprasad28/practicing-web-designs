@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar container">
+            <ul class="nav-menu flexing justify-between">
+                <li><img class="logo" src="icons/logo.png" alt="">
+                </li>
+                <li class="searchbar flexing"><input type="text" placeholder="Search Here"> <button><a href=""><img
+                                src="icons/Frame 13.png" alt=""></button></a></li>
+                <li class="burger-icon"> <img src="icons/icons8-menu-squared-50.png" alt=""></li>
+            </ul>
+            <ul class="sliding-menu flexing flex-direction-column">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-container">
+        <div class="container flexing justify-between">
+            <img src="banner.webp" alt="">
+            <form action="" class="flexing flex-direction-column">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <input type="email" placeholder="Your email">
+                <button><a href="#">Sumbit</a></button>
+            </form>
+        </div>
+    </main>
+    <section class="marque-section">
+        <div class="container marque-container">
+            <marquee behavior="" direction="right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
+                pariatur facere labore iste deleniti dicta ratione, nam ullam. Atque, dicta voluptatibus quam sed
+                veritatis quos blanditiis beatae expedita itaque pariatur.</marquee>
+        </div>
+    </section>
+    <!-- footer here -->
+    <footer>
+        <div class="container">
+            <ul class=" footer-list flexing justify-center">
+                <li>
+                    <h2>Here we are</h2>
+                    <p>Lorem, ipsum dolor.</p>
+                </li>
+                <li>
+                    <h2>Here we are</h2>
+                    <p>Lorem, ipsum dolor.</p>
+                </li>
+                <li>
+                    <h2>Here we are</h2>
+                    <p>Lorem, ipsum dolor.</p>
+                </li>
+                <li>
+                    <h2>Here we are</h2>
+                    <p>Lorem, ipsum dolor.</p>
+                </li>
+                <li>
+                    <h2>Here we are</h2>
+                    <p>Lorem, ipsum dolor.</p>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function () {
+            var x = 0;
+            $(".burger-icon").click(function () {
+                if (x % 2 == 0)
+                    $(".sliding-menu").css("transform", "translateX(0%)");
+                else
+                    $(".sliding-menu").css("transform", "translateX(100%)");
+                    x++;
+            });
+            if (x > 1)
+                x = 0;
+        });
+    </script>
+</body>
+
+</html>
